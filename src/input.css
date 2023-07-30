@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .containera {
+        @apply max-w-7xl w-full mx-auto px-5;
+    }
+}
+@font-face {
+    font-family: robotoo;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+body{
+    font-family: robotoo;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 80px;
+}
+.stopwatch-pointer{
+    transform-origin:bottom center;
+}
+/* hour  */
+.hour {
+    position: relative;
+}
+
+.hour::after{
+    position: absolute;
+    right: -27px;
+    bottom: 0;
+    content: 'H';
+    font-size: 35px;
+    line-height: 47px;
+}
+/* minute  */
+.minute {   
+    position: relative;
+}
+
+.minute::after{
+    position: absolute;
+    right: -33px;
+    bottom: 0;
+    content: 'M';
+    font-size: 35px;
+    line-height: 47px;
+}
+/* second  */
+.second {
+    position: relative;
+}
+
+.second::after{
+    position: absolute;
+    right: -21px;
+    bottom: 0;
+    content: 'S';
+    font-size: 35px;
+    line-height: 47px;
+}
+.m-second {
+    font-size: 50px;
+}
+
+.li {
+    transition: all 0.5s ease-in;
+    animation: 0.5s anm ease-in;
+}
+
+@keyframes anm {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.li:not(:first-child) {
+    border-bottom: 1px solid #ff0000 !important;
+}
