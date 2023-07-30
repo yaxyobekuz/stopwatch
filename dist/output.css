@@ -1985,16 +1985,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2003,6 +1993,16 @@ video {
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-left {
@@ -2466,6 +2466,114 @@ video {
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
+}
+
+.containera {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@font-face {
+  font-family: robotoo;
+
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+body{
+  font-family: robotoo;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.stopwatch-pointer{
+  transform-origin:bottom center;
+}
+
+/* hour  */
+
+.hour {
+  position: relative;
+}
+
+.hour::after{
+  position: absolute;
+  right: -27px;
+  bottom: 0;
+  content: 'H';
+  font-size: 35px;
+  line-height: 47px;
+}
+
+/* minute  */
+
+.minute {
+  position: relative;
+}
+
+.minute::after{
+  position: absolute;
+  right: -33px;
+  bottom: 0;
+  content: 'M';
+  font-size: 35px;
+  line-height: 47px;
+}
+
+/* second  */
+
+.second {
+  position: relative;
+}
+
+.second::after{
+  position: absolute;
+  right: -21px;
+  bottom: 0;
+  content: 'S';
+  font-size: 35px;
+  line-height: 47px;
+}
+
+.m-second {
+  font-size: 50px;
+}
+
+.li {
+  transition: all 0.5s ease-in;
+  animation: 0.5s anm ease-in;
+}
+
+@keyframes anm {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.li:not(:first-child) {
+  border-bottom: 1px solid #ff0000 !important;
 }
 
 @media (min-width: 640px) {
