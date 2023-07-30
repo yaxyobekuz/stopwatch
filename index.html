@@ -27,6 +27,77 @@
             <!-- center  -->
         </div>
     </header>
+    <main>
+        <div class="containera">
+            <!-- stopwatch image  -->
+            <div class="flex w-56 items-center justify-center relative mx-auto">
+                <!-- top item -->
+                <div class="flex items-center flex-col absolute top-[-32px]">
+                    <div class="w-8 h-5 bg-blue-700 rounded-sm"></div>
+                    <div class="w-4 h-4 bg-blue-700"></div>
+                </div>
+                <!-- left item -->
+                <div class="flex items-center flex-col absolute top-2.5 -rotate-45 left-2.5">
+                    <div class="w-8 h-5 bg-blue-700 rounded-sm"></div>
+                    <div class="w-4 h-4 bg-blue-700"></div>
+                </div>
+                <!-- border -->
+                <div class="flex relative items-center justify-center rounded-full border-[20px] border-blue-700 w-56 h-56">
+                    <!-- center circle  -->
+                    <div class="relative w-7 h-7 rounded-full bg-blue-700">
+                        <!-- pointer  -->
+                        <div class="absolute w-0.5 h-20 bg-blue-700 -top-[67px] left-[13px] stopwatch-pointer"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- time -->
+            <h2 class="flex justify-center items-end space-x-8">
+                <span class="flex justify-end hour w-24">00</span>
+                <span class="flex justify-end minute w-24">00</span>
+                <span class="flex justify-end second w-24">00</span>
+                <span class="flex justify-end m-second leading-[55px] w-16">00</span>
+            </h2>
+            <!-- buttons wrapper -->
+            <div class="buttons-wrapper flex justify-center items-center">
+                <!-- reset btn  -->
+                <button style="padding: 10px;"
+                    class="flex items-center justify-center js-plus-btn bg-blue-700 rounded-full w-[72px] h-[72px] reset">
+                    <svg width="40" height="40" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" class="text-white"
+                            d="M960 0v213.333c411.627 0 746.667 334.934 746.667 746.667S1371.627 1706.667 960 1706.667 213.333 1371.733 213.333 960c0-197.013 78.4-382.507 213.334-520.747v254.08H640V106.667H53.333V320h191.04C88.64 494.08 0 720.96 0 960c0 529.28 430.613 960 960 960s960-430.72 960-960S1489.387 0 960 0"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="bg-blue-700 rounded-full w-24 h-24 mx-6">
+                    <!-- start btn  -->
+                    <button class="start rounded-full">
+                        <svg fill="currentColor" class="text-white" height="100%" version="1.1" viewBox="0 0 36 36"
+                            width="100%">
+                            <path d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z"></path>
+                        </svg>
+                    </button>
+                    <!-- stop btn  -->
+                    <button class="hidden stop rounded-full">
+                        <svg fill="currentColor" class="text-white" height="100%" version="1.1" viewBox="0 0 36 36"
+                            width="100%">
+                            <path d="M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- plus btn  -->
+                <button disabled
+                    class="flex items-center justify-center js-plus-btn bg-blue-700 rounded-full w-[72px] h-[72px] plus">
+                    <svg width="40" height="40" fill="currentColor" class="text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- time results  -->
+            <ul class="flex justify-center flex-col-reverse time-result">
+            </ul>
+        </div>
+    </main>
     <script src="./script.js"></script>
 </body>
 
