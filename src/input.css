@@ -30,67 +30,48 @@ h2 {
     transform-origin:bottom center;
 }
 /* hour  */
-.hour {
+.hour,.minute ,.second {
     position: relative;
 }
 
-.hour::after{
+.hour::after,.minute::after,.second::after{
     position: absolute;
+    width: 30px;
     right: -27px;
     bottom: 0;
+    font-size: 35px;
+    line-height: 47px;
+}
+.hour::after{
     content: 'H';
-    font-size: 35px;
-    line-height: 47px;
 }
-/* minute  */
-.minute {   
-    position: relative;
-}
-
 .minute::after{
-    position: absolute;
-    right: -33px;
-    bottom: 0;
     content: 'M';
-    font-size: 35px;
-    line-height: 47px;
 }
-/* second  */
-.second {
-    position: relative;
-}
-
 .second::after{
-    position: absolute;
-    right: -21px;
-    bottom: 0;
     content: 'S';
-    font-size: 35px;
-    line-height: 47px;
 }
 .m-second {
     font-size: 50px;
+    line-height: 58px;
 }
-
-.li {
-    transition: all 0.5s ease-in;
-    animation: 0.5s anm ease-in;
-}
-
-@keyframes anm {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
 .li:not(:first-child) {
-    border-bottom: 1px solid #ff0000 !important;
+    border-bottom: 1px solid #1D4ED8 !important;
+}
+@media only screen and (max-width:499px){
+    h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .hour::after,.minute::after,.second::after{
+        width: 23px;
+        right: -23px;
+        bottom: 0;
+        font-size: 28px;
+        line-height: 39px;
+    }
+    .m-second {
+        font-size: 42px;
+        line-height: 45px;
+    }
 }
