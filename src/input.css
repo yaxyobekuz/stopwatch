@@ -66,12 +66,27 @@ h2 {
     .hour::after,.minute::after,.second::after{
         width: 23px;
         right: -23px;
-        bottom: 0;
         font-size: 28px;
         line-height: 39px;
     }
     .m-second {
         font-size: 42px;
         line-height: 45px;
+    }
+}
+@media only screen and (max-width:369px){
+    h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .hour::after,.minute::after,.second::after{
+        width: 17px;
+        right: -16px;
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .m-second {
+        font-size: 36px;
+        line-height: 37px;
     }
 }
