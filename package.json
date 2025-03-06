@@ -1,10 +1,10 @@
 {
   "name": "stopwatch",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000s\u0000t\u0000o\u0000p\u0000w\u0000a\u0000t\u0000c\u0000h\u0000\r\u0000 \u0000",
-  "main": "script.js",
+  "description": "",
+  "main": "./src/scripts/index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
   },
   "keywords": [],
   "author": "",
