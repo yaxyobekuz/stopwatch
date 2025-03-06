@@ -1,8 +1,8 @@
-## 🕔 **Stopwatch**
+# 🕔 **Stopwatch**
 
 ![Project Preview](https://stopwatchappuz.netlify.app/public/preview.jpg)
 
-📌 **A responsive stopwatch landing page built with HTML, Tailwind CSS & JavaScript**
+📌 **A responsive stopwatch landing page website built with HTML, Tailwind CSS & JavaScript**
 
 ---
 
@@ -16,7 +16,6 @@
 
 ✅ Fully responsive and mobile-friendly design  
 ✅ Modern UI built with **Tailwind CSS**  
-✅ Optimized for fast loading and **SEO-friendly**  
 ✅ Clean and well-structured **HTML, Tailwind CSS & JavaScript** code
 
 ---
